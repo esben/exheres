@@ -1,0 +1,33 @@
+# Copyright 2015 Esben Haabendal <esben@haabendal.dk>
+# Distributed under the terms of the GNU General Public License v2
+
+require pypi setup-py [ import=setuptools ]
+
+SUMMARY="A built-package format for Python"
+
+DESCRIPTION="
+A wheel is a ZIP-format archive with a specially formatted filename and the
+.whl extension. It is designed to contain all the files for a PEP 376
+compatible install in a way that is very close to the on-disk format.
+Many packages will be properly installed with only the Unpack step (simply
+extracting the file onto sys.path), and the unpacked archive preserves enough
+information to Spread (copy data and scripts to their final locations) at any
+later time."
+
+HOMEPAGE="http://bitbucket.org/pypa/wheel/"
+
+LICENCES="MIT"
+SLOT="0"
+PLATFORMS="~amd64"
+MYOPTIONS=""
+
+DEPENDENCIES="
+    test:
+        dev-python/pytest[python_abis:*(-)?]
+        dev-python/pytest-cov[python_abis:*(-)?]
+        dev-python/coverage[python_abis:*(-)?]
+        dev-python/jsonschema[python_abis:*(-)?]
+"
+
+BUGS_TO="esben@haabendal.dk"
+
