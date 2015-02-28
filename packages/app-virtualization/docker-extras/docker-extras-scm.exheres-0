@@ -1,0 +1,25 @@
+# Copyright 2015 Esben Haabendal <esben@haabendal.dk>
+# Distributed under the terms of the GNU General Public License v2
+
+require github [ user=sameersbn ]
+
+SUMMARY="Helper scripts for everyday docker use"
+
+LICENCES="public-domain"
+SLOT="0"
+PLATFORMS="~amd64 ~x86"
+MYOPTIONS=""
+
+DEPENDENCIES="
+    run:
+        app-virtualization/docker
+"
+
+src_compile() {
+    :
+}
+
+DEFAULT_SRC_INSTALL_PARAMS="prefix=${IMAGE}/usr/bin"
+
+BUGS_TO="esben@haabendal.dk"
+
