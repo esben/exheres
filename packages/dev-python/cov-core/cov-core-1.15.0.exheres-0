@@ -1,0 +1,30 @@
+# Copyright 2015 Esben Haabendal <esben@haabendal.dk>
+# Distributed under the terms of the GNU General Public License v2
+
+require pypi setup-py [ import=setuptools ]
+
+SUMMARY="plugin core for use by pytest-cov, nose-cov and nose2-cov"
+
+DESCRIPTION="
+This is a lib package for use by pytest-cov, nose-cov and nose2-cov. Unless
+you’re developing a coverage plugin for a test framework, you probably want
+one of those.
+"
+
+HOMEPAGE="https://github.com/schlamar/pytest-cov"
+
+LICENCES="MIT"
+SLOT="0"
+PLATFORMS="~amd64"
+MYOPTIONS=""
+
+MY_PN="pytest-cov"
+MY_PNV="pytest-cov-1.8.1"
+
+DEPENDENCIES="
+    build+run:
+        dev-python/coverage[>=3.6][python_abis:*(-)?]
+"
+
+BUGS_TO="esben@haabendal.dk"
+

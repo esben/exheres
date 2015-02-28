@@ -1,0 +1,30 @@
+# Copyright 2015 Esben Haabendal <esben@haabendal.dk>
+# Distributed under the terms of the GNU General Public License v2
+
+require pypi setup-py [ import=setuptools ]
+
+SUMMARY="py.test plugin for coverage reporting"
+
+DESCRIPTION="
+This plugin produces coverage reports. It supports centralised testing and
+distributed testing in both load and each modes. It also supports coverage of
+subprocesses.
+"
+
+HOMEPAGE="https://github.com/schlamar/pytest-cov"
+
+LICENCES="MIT"
+SLOT="0"
+PLATFORMS="~amd64"
+MYOPTIONS=""
+
+DEPENDENCIES="
+    test:
+        dev-python/py[>=1.4.22][python_abis:*(-)?]
+        dev-python/pytest[>=2.6.0][python_abis:*(-)?]
+        dev-python/coverage[>=3.7.1][python_abis:*(-)?]
+        dev-python/cov-core[>=1.14.0][python_abis:*(-)?]
+"
+
+BUGS_TO="esben@haabendal.dk"
+
