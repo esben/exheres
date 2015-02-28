@@ -1,0 +1,24 @@
+# Copyright 2015 Esben Haabendal <esben@haabendal.dk>
+# Distributed under the terms of the GNU General Public License v2
+
+require pypi setup-py [ import=setuptools ]
+
+SUMMARY="An implementation of JSON Schema validation for Python"
+
+DESCRIPTION="
+jsonschema is an implementation of JSON Schema for Python (supporting 2.6+
+including Python 3).
+"
+
+HOMEPAGE="http://github.com/Julian/jsonschema"
+
+LICENCES="MIT"
+SLOT="0"
+PLATFORMS="~amd64"
+MYOPTIONS=""
+
+DEPENDENCIES="
+"
+
+BUGS_TO="esben@haabendal.dk"
+
