@@ -1,0 +1,20 @@
+# Copyright 2015 Esben Haabendal <esben@haabendal.dk>
+# Distributed under the terms of the GNU General Public License v2
+
+require github [ user=gotty release=v${PV} suffix="tar.xz" ]
+
+SUMMARY="The really simple TTY terminal application"
+
+DESCRIPTION="
+Go TTY or \"gotty\" is a really simple TTY terminal application which features a
+simple commandline interface to easily connect to TTY devices for basic
+input/output.
+"
+
+LICENCES="GPLv2"
+SLOT="0"
+MYOPTIONS=""
+PLATFORMS="~amd64 ~x86"
+
+DEPENDENCIES=""
+
